@@ -517,9 +517,6 @@
         }
 
         @media (max-width: 768px) {
-            body {
-                overflow-y: auto;
-            }
             .container {
                 transform: scale(1);
                 padding: 80px 1rem 100px;
@@ -539,22 +536,10 @@
                 letter-spacing: 2px;
                 margin-bottom: 2rem;
             }
-            .countdown {
-                flex-wrap: wrap;
-                gap: 1rem;
-                margin-bottom: 2rem;
-            }
-            .time-unit {
-                padding: 1rem 1.5rem;
-                flex: 0 0 calc(50% - 0.5rem);
-            }
-            .time-number {
-                font-size: 2.5rem;
-            }
-            .time-label {
-                font-size: 0.8rem;
-                letter-spacing: 2px;
-            }
+            .countdown { gap:.5rem; flex-wrap:nowrap; justify-content:center; }
+            .time-unit { padding:.5rem .4rem; border-width:1.5px; border-radius:8px; width:70px; min-width:70px; max-width:70px; flex:0 0 70px; }
+            .time-number { font-size:1.6rem; line-height:1; }
+            .time-label { font-size:.7rem; letter-spacing:1px; }
             .film-reel {
                 width: 60px;
                 height: 60px;
